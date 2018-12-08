@@ -22,7 +22,7 @@
             <div id="form-outline">
                 <form>
                     <div id="card-number-container">
-                        <label for="card-number">Card Number</label>
+                        <label class="font-opacity" for="card-number">Card Number</label>
                         <div id="credit-cards">
                             <img src="images/visa.jpg" alt="visa logo">
                             <img src="images/mastercard.jpg" alt="mastercard logo">
@@ -31,23 +31,43 @@
                         <input type="text" id="card-number" name="card-number">
                     </div>
                     <div id="expiry-container">
-                        <label for="expiry">Expiry</label><br>
-                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                        <label class="font-opacity" for="expiry">Expiry</label><br>
+                        <input class="font-opacity" type="text" id="expiry" name="expiry" placeholder="MM/YY">
                     </div>
                     <div id="security-code-container">
-                        <label for="security-code">Security Code</label><br>
+                        <label class="font-opacity" for="security-code">Security Code</label><br>
                         <input type="text" id="security-code" name="security-code">
                         <div id="question-mark-box">
-                            <div class="circle">
+                            <div class="security-circle">
                                 <span class="question-mark">?</span>
                             </div>
                         </div>
                     </div>
                     <div id="card-name-container">
-                        <label for="card-name">Name on the Card</label><br>
-                        <input type="text" id="card-name" name="card-name" placeholder="Name on the Card">
+                        <label class="font-opacity" for="card-name">Name on the Card</label><br>
+                        <input class="font-opacity" type="text" id="card-name" name="card-name" placeholder="Name on the Card">
+                    </div>
+                    <div>
+                        <p class="font-opacity medium-font">Select Your Preffered Currency</p>
+                        <div class="switch switch--horizontal">
+                            <input id="radio-a" type="radio" name="first-switch" checked="checked"/>
+                            <label for="radio-a">62.71 EUR</label>
+                            <input id="radio-b" type="radio" name="first-switch"/>
+                            <label for="radio-b">50.00 GBP</label><span class="toggle-outside"><span class="toggle-inside"></span></span>
+                        </div>
+                        <div>
+                            <p id="exchange-rate" class="small-font">(Exchange rate used: 1GBP=1.254211 EUR)</p>
+                            <div class="currency-circle">
+                                <span class="question-mark">?</span>
+                            </div>
+                        </div>
+                        <p id="rate-mark-up" class="extra-small-font">Exchange Rate Mark-Up: 3% Commission for Currency Conversion 0%</p>
                     </div>
                 </form>
+                <div id="form-footer">
+                    <button type="submit"><img src="images/lock.png" alt="american express logo">PAY NOW</button>
+                    <p class="small-font"><a href="#">Select another payment method</a></p>
+                </div>
             </div>
         </div>
     </body>
