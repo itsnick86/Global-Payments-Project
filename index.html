@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
     <head>
         <meta charset="utf-8">
@@ -13,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
         <link href="css/main.css" rel="stylesheet" type="text/css">
     </head>
-
     <body>
         <div id="wrapper">
             <div id="form-header">
@@ -28,18 +26,19 @@
                             <img src="images/mastercard.jpg" alt="mastercard logo">
                             <img src="images/express.svg" alt="american express logo">
                         </div><br>
-                        <input type="text" id="card-number" name="card-number">
+                        <input type="text" id="card-number" name="card-number" maxlength="16">
                     </div>
                     <div id="expiry-container">
                         <label class="font-opacity" for="expiry">Expiry</label><br>
-                        <input class="font-opacity" type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                        <input class="font-opacity" type="text" id="expiry" name="expiry" maxlength="5" placeholder="MM/YY">
                     </div>
                     <div id="security-code-container">
                         <label class="font-opacity" for="security-code">Security Code</label><br>
-                        <input type="text" id="security-code" name="security-code">
+                        <input type="text" id="security-code" name="security-code" maxlength="4">
                         <div id="question-mark-box">
-                            <div class="security-circle">
+                            <div class="security-circle tooltip">
                                 <span class="question-mark">?</span>
+                                <span class="tooltiptext">Enter the 3 or 4 digit code on the back of your card</span>
                             </div>
                         </div>
                     </div>
@@ -57,8 +56,9 @@
                         </div>
                         <div>
                             <p id="exchange-rate" class="small-font">(Exchange rate used: 1GBP=1.254211 EUR)</p>
-                            <div class="currency-circle">
+                            <div class="currency-circle tooltip">
                                 <span class="question-mark">?</span>
+                                <span class="tooltiptext">Exchange rate subject to change</span>
                             </div>
                         </div>
                         <p id="rate-mark-up" class="extra-small-font">Exchange Rate Mark-Up: 3% Commission for Currency Conversion 0%</p>
