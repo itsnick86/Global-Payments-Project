@@ -44,7 +44,7 @@ FORM GENERAL
 *********************************/
 
 form {
-    background-color: #f6f6f6;
+    background-color: #F4F5F6;
     margin: 0px;
     padding: 10px 10px;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.19);
@@ -65,9 +65,9 @@ FORM HEADER
 *********************************/
 
 #form-header {
-    background-color: #837f7f;
+    background-color: #6A6E78;
     color: #fff;
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
 }
 
@@ -185,7 +185,36 @@ PREFERRED CURRENCY SECTION
 
 
 /********************************
-SWITCH STYLES
+FORM FOOTER
+*********************************/
+
+#form-footer {
+    margin-top: 20px;
+}
+
+#form-footer button {
+    width: 100%;
+    background-color: #0090d8;
+    font-size: 22px;
+    color: #fff;
+    height: 50px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+#form-footer p {
+    color: #0090d8;
+    text-align: center;
+}
+
+#form-footer img {
+    height: 15px;
+    transform: rotate(-20deg);
+    margin-right: 5px;
+}
+
+
+/********************************
+TOGGLE SWITCH STYLES
 *********************************/
 
 .switch {
@@ -265,67 +294,35 @@ SWITCH STYLES
 
 
 /********************************
-FORM FOOTER
+TOOLTIP STYLES
 *********************************/
 
-#form-footer {
-    margin-top: 20px;
-}
-
-#form-footer button {
-    width: 100%;
-    background-color: #0090d8;
-    font-size: 20px;
-    color: #fff;
-    height: 50px;
-    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.19);
-}
-
-#form-footer p {
-    color: #0090d8;
-    text-align: center;
-}
-
-#form-footer img {
-    height: 15px;
-    transform: rotate(-20deg);
-    margin-right: 5px;
-}
-
-
-/********************************
-SWITCH STYLES
-*********************************/
-
-/* Tooltip container */
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px solid #837f7f; /* If you want dots under the hoverable text */
+    border-bottom: 1px solid #6A6E78;
   }
   
-  /* Tooltip text */
   .tooltip .tooltiptext {
     visibility: hidden;
     font-size: 14px;
     width: 150px;
-    background-color: #837f7f;
+    background-color: #6A6E78;
     color: #fff;
     text-align: center;
     padding: 5px 5px;
     margin-left: 10px;
     border-radius: 6px;
    
-    /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
   }
   
-  /* Show the tooltip text when you mouse over the tooltip container */
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
 
+  
 /********************************
 FLOAT CLEARFIX
 *********************************/
