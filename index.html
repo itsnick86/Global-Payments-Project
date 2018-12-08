@@ -19,27 +19,36 @@
             <div id="form-header">
                 <p>Pay with a card</p>
             </div>
-                <div id="form-outline">
-                    <form>
-                        <div id="card-number-container">
-                            <label for="card-number">Card Number</label><br>
-                            <input type="text" id="card-number" name="card-number">
+            <div id="form-outline">
+                <form>
+                    <div id="card-number-container">
+                        <label for="card-number">Card Number</label>
+                        <div id="credit-cards">
+                            <img src="images/visa.jpg" alt="visa logo">
+                            <img src="images/mastercard.jpg" alt="mastercard logo">
+                            <img src="images/express.svg" alt="american express logo">
+                        </div><br>
+                        <input type="text" id="card-number" name="card-number">
+                    </div>
+                    <div id="expiry-container">
+                        <label for="expiry">Expiry</label><br>
+                        <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                    </div>
+                    <div id="security-code-container">
+                        <label for="security-code">Security Code</label><br>
+                        <input type="text" id="security-code" name="security-code">
+                        <div id="question-mark-box">
+                            <div class="circle">
+                                <span class="question-mark">?</span>
+                            </div>
                         </div>
-                        <div id="expiry-container">
-                            <label for="expiry">Expiry</label><br>
-                            <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
-                        </div>
-                        <div id="security-code-container">
-                            <label for="security-code">Security Code</label><br>
-                            <input type="text" id="security-code" name="security-code">
-                        </div>
-                        <div id="card-name-container">
-                            <label for="card-name">Name on the Card</label><br>
-                            <input type="text" id="card-name" name="card-name" placeholder="Name on the Card">
-                        </div>
-                    </form>
-                </div>
+                    </div>
+                    <div id="card-name-container">
+                        <label for="card-name">Name on the Card</label><br>
+                        <input type="text" id="card-name" name="card-name" placeholder="Name on the Card">
+                    </div>
+                </form>
+            </div>
         </div>
-
     </body>
 </html>

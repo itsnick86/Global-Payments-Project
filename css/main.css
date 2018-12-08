@@ -8,7 +8,7 @@ GENERAL
 }
 
 #wrapper {
-    max-width: 700px;
+    max-width: 650px;
     margin: 0 auto;
     padding: 0 5%;
 }
@@ -19,7 +19,7 @@ img {
 
 
 /********************************
-BODY ELEMENTS
+FORM HEADER
 *********************************/
 
 #form-header {
@@ -40,6 +40,11 @@ BODY ELEMENTS
     padding: 10px 10px;
 }
 
+
+/********************************
+FORM GENERAL
+*********************************/
+
 form {
     background-color: #F4F4F4;
     margin: 0px;
@@ -47,12 +52,33 @@ form {
 }
 
 form div {
-    margin: 8px 0px;
+    margin-bottom: 10px;
 }
 
 form input {
     margin: 3px 0px;
-    padding: 5px 0px;
+    padding: 5px 5px;
+}
+
+
+/********************************
+FORM INPUT SECTION
+*********************************/
+
+#card-number-container label {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+}
+
+#credit-cards {
+    float: right;
+    margin: 0px 2px 0px 0px;
+}
+
+#credit-cards img {
+    height: 30px;
+    margin-left: 1px;
 }
 
 #card-number {
@@ -61,12 +87,36 @@ form input {
 
 #expiry-container {
     float: left;
-    width: 60%;
+    width: 50%;
+}
+
+#expiry {
+    width: 80%;
 }
 
 #security-code-container {
     float: right;
-    width: 35%;
+}
+
+#question-mark-box {
+    width: 30px;
+    height: 31px;
+    border: 1px solid lightgray;
+    background-color: white;
+    float: right;
+    margin: 3px 0px 0px 0px;
+}
+
+.circle {
+    width: 23px;
+    height: 24px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    background-color: white;
+    color: gray;
+    text-align: center;
+    margin: 2px 0px 0px 2px;
+    padding-top: 2px;
 }
 
 #card-name {
@@ -76,6 +126,13 @@ form input {
 #card-name-container {
     clear: both;
 }
+
+
+/********************************
+PREFERRED CURRENCY SECTION
+*********************************/
+
+
 
 
 /********************************
